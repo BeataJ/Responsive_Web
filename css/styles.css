@@ -60,11 +60,12 @@ main h1 {
 #latest-products ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
+    gap: 1rem;
     margin: 0;
     padding: 0; 
     list-style: none;
 }
+
 
 .food-item {
     background-color: rgb(228, 206, 182);
@@ -93,4 +94,10 @@ main h1 {
 
 .btn:hover {
    background-color: rgb(221, 134, 34);
+}
+
+@media (max-width: 768px) {
+    #latest-products ul {
+        grid-template-columns: 1fr;
+    }
 }
